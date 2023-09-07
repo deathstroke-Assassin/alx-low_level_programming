@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-fprintf(stdin, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 printf("\n");
 return (1);
 }
