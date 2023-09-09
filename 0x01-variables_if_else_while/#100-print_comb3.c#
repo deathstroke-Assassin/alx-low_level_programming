@@ -13,11 +13,11 @@ for (x = 48; x <= 56; x++)
 {
 for (y = 48; y <= 57; y++)
 {
-if (x < y)
+if (x != y)
 {
 putchar (x);
 putchar (y);
-if (x < 57 || y < 57)
+if (x < 57 && y < 57)
 {
 putchar(44);
 putchar(32);
