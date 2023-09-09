@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int n = '0';
-char chr = 'a'; 
+int n;
+char chr = 'a';
 for (n = 48; n <= 58; n++)
 {
 putchar (n);
