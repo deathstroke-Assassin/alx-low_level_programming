@@ -16,7 +16,7 @@ for (y = 48; y <= 56; y++)
 {
 for (z = 48; z <= 56; z++)
 {
-  if (x < y < z)
+if (x < y && y < z)
 {
 putchar (x);
 putchar (y);
