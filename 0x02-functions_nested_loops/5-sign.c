@@ -21,5 +21,5 @@ else if (n == 0)
 _putchar('0');
 return (0);
 }
-return (-1)
+return (-1);
 }
