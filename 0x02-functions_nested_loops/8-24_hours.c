@@ -5,11 +5,11 @@
  */
 void jack_bauer(void)
 {
-int x;
-int v;
-while (x <= 24)
+int x = 0;
+int v = 0;
+while (x < 24)
 {
-while (v <= 60)
+while (v < 60)
 {
 _putchar(x + '0');
 _putchar(':' + '0');
