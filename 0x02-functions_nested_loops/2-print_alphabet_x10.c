@@ -4,16 +4,16 @@
  */
 void print_alphabet_x10(void)
 {
-  char c = 'a';
-  char n = 48;
+char c = 'a';
+char n = 48;
   while (n <= 57)
     {
       while (c <= 'z')
 	{
 	  _putchar(c);
 	  c++;
-	  n++;
 	}
       _putchar('\n');
+      n++;
     }
 }
