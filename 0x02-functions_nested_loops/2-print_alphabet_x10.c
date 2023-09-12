@@ -5,8 +5,8 @@
 void print_alphabet_x10(void)
 {
   char c = 'a';
-  int n = 1;
-  while (n <= 10)
+  char n = 48;
+  while (n <= 57)
     {
       while (c <= 'z')
 	{
