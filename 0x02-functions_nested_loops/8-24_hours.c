@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * jack_bauer - checks for character
+ * Return: 1 if c is letter, 0 otherwise
+ */
+void jack_bauer(void)
+{
+int x;
+int v;
+while (x <= 24)
+{
+while (v <= 60)
+{
+_putchar(x + '0');
+_putchar(':' + '0');
+_putchar(v + '0');
+_putchar('\n');
+v++;
+}
+x++;
+}
+}
