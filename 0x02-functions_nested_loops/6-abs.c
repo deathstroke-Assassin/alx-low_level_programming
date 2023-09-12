@@ -4,7 +4,7 @@
  * @n: the number to check
  * Return: 1 if c is letter, 0 otherwise
  */
-int _abs(int)
+int _abs(int x)
 {
-return (0);
+return (x);
 }
