@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-  int z, v, x, y;
+int z, v, x, y;
 x = 1;
 y = 2;
 for (v = 1; v < 50; v++)
 {
 z = x + y;
+y = z + y;
 printf("%d, ", z);
 }
 if (v == 50)
