@@ -8,19 +8,18 @@
  */
 int add(int x, int y)
 {
-int z;
+int z, v;
 x = 1;
 y = 2;
-int v = 1;
-for (v < 50; v++)
+for (v = 1; v < 50; v++)
 {
 z = x + y;
-printf("%d, ", z)
+printf("%d, ", z);
 }
-if (v = 50)
+if (v == 50)
 {
-printf("%d", z)
+printf("%d", z);
 }
-printf("\n")
-return (z);
+printf("\n");
+return (0);
 }
