@@ -14,12 +14,14 @@ for (v = 1; v < 98; v++)
 z = x + y;
 x = y;
 y = z;
-printf("%lu, ", z);
+printf("%lu, ", z /= 1000000);
+printf("%lu, ", z % 1000000);
 }
 if (v == 98)
 {
 z = x + y;
-printf("%lu", z);
+printf("%lu", z /= 1000000);
+printf("%lu", z % 1000000);
 }
 printf("\n");
 return (0);
