@@ -13,7 +13,7 @@ while (v < 60)
 {
 _putchar((x / 10) + '0');
 _putchar((x % 10) + '0');
-_putchar(':' + '0');
+_putchar(':');
 _putchar((v / 10) + '0');
 _putchar((v % 10) + '0');
 _putchar('\n');
