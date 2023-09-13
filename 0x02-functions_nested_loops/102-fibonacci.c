@@ -18,6 +18,7 @@ printf("%ld, ", z);
 }
 if (v == 50)
 {
+z = x + y;
 printf("%ld", z);
 }
 printf("\n");
