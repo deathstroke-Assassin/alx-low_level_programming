@@ -1,11 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * add - checks for character
- * @y: 1 if c is letter, 0 otherwise
- * @x: 1 if c is letter, 0 otherwise
- * Return: 1 if c is letter, 0 otherwise
+ * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
-int add(int x, int y)
+int main(void)
 {
 int z, v;
 x = 1;
