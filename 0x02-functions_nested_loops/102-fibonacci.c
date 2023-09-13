@@ -7,12 +7,12 @@
 int main(void)
 {
 int z, v, x, y;
-x = 1;
-y = 2;
+x = 0;
+y = 0;
 for (v = 1; v < 50; v++)
 {
 z = x + y;
-y = z + y;
+y = z;
 printf("%d, ", z);
 }
 if (v == 50)
