@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int z, v;
+  int z, v, x, y;
 x = 1;
 y = 2;
 for (v = 1; v < 50; v++)
