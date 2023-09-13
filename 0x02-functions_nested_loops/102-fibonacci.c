@@ -14,11 +14,11 @@ for (v = 1; v < 50; v++)
 z = x + y;
 x = y;
 y = z;
-printf("%d, ", z);
+printf("%ld, ", z);
 }
 if (v == 50)
 {
-printf("%d", z);
+printf("%ld", z);
 }
 printf("\n");
 return (0);
