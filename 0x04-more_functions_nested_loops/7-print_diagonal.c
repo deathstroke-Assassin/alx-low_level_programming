@@ -22,7 +22,7 @@ void print_line(int n)
 				if (z == i)
 					_putchar('\\');
 			}
-				else if (z < i)
+			if (z < i)
 					_putchar(' ');
 		_putchar('\n');
 		}
