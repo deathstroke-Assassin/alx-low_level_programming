@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_line - prints the numbers, from 0 to 9,
+ * print_diagonal - prints the numbers, from 0 to 9,
  * followed by a new line
  * @n:followed by a new line
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
