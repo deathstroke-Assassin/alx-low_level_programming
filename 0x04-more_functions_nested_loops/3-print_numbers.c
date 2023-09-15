@@ -1,13 +1,17 @@
 #include "main.h"
+
 /**
- * print_numbers - checks for uppercase character
+ * print_numbers - prints the numbers, from 0 to 9,
+ * followed by a new line
  */
 void print_numbers(void)
 {
-int n;
-for (n = 0; n < 10; n++)
-{
-_putchar(n + '0');
-}   
-_putchar('\n');
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+
+	_putchar('\n');
 }
