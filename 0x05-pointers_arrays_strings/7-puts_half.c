@@ -12,13 +12,14 @@ int half;
 while (str[l] != '\0')
 {
 l++;
+}
 half = l / 2;
 if (l % 2 == 1)
 {
 half++;
-_putchar (str[l]);
 }
 while (half < l)
+_putchar (str[l]);
 half++;
 }
 _putchar('\n');
