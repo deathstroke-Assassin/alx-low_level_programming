@@ -24,5 +24,5 @@ rev = *end;
 strt++;
 end--;
 }
-end[len + 1] = '\0'
+end[len + 1] = '\0';
 }
