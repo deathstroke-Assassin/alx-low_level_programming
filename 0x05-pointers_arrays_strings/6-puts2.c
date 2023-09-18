@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - check the code
- * @s: the character
+ * @str: the character
  * Return: Always 0.
  */
 void puts2(char *str)
