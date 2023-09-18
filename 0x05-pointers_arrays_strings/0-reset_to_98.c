@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void reset_to_98 - check the code
+ * reset_to_98 - check the code
  * @n: the integer
  * Return: Always 0.
  */
