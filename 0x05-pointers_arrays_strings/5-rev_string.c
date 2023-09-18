@@ -1,27 +1,27 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *  rev_string - check the code
+ * rev_string - check the code
  * @s: the character
  * Return: Always 0.
  */
 void rev_string(char *s)
 {
 int r, len;
-char *strt, *end = s;
+char *start, *end = s;
 for (r = 0; s[r] != '\0' && s[r + 1] != '\0'; r++)
 {
 end++;
 }
 len = r + 1;
-strt = s;
+start = s;
 for (r = 0; r < len / 2; r++)
 {
 char rev;
 rev = *end;
-*end = *strt;
-*strt = rev;
-strt++;
+*end = *start;
+*start = rev;
+start++;
 end--;
 }
 end[len + 1] = '\0';
