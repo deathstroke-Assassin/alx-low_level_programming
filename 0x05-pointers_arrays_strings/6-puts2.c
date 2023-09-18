@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts2 - check the code
+ * puts2 - check the code
  * @s: the character
  * Return: Always 0.
  */
