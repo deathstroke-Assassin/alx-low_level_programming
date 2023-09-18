@@ -8,24 +8,24 @@
 
 void rev_string(char *s)
 {
-	int a, len;
+int start = 0;
+    int end = 0;
 
-	char *begin, *end = s;
+    // Find the length of the string
+    while (s[end] != '\0')
+    {
+        end++;
+    }
+    end--;
 
-	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
-	{
-		end++;
-	}
-	len = a + 1;
-	begin = s;
-	for (a = 0; a < len / 2; a++)
-	{
-		char x;
-		x = *end;
-		*end = *begin;
-		*begin = x;
-		begin++;
-		end--;
-	}
-	end[len + 1] = '\0';
+    // Reverse the string
+    while (start < end)
+    {
+        char temp = s[start];
+        s[start] = s[end];
+        s[end] = temp;
+
+        start++;
+        end--;
+    }
 }
