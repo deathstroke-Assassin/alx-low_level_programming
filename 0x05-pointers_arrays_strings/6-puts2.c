@@ -4,7 +4,7 @@
  * @s: the character
  * Return: Always 0.
  */
-void _puts2(char *s)
+void puts2(char *str)
 {
 int l = 0;
 
