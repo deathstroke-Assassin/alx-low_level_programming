@@ -19,7 +19,9 @@ if (l % 2 == 1)
 half++;
 }
 while (half < l)
+{
 _putchar (str[l]);
 half++;
+}
 _putchar('\n');
 }
