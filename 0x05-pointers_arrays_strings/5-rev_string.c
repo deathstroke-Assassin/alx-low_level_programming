@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  rev_string - check the code
  * @s: the character
