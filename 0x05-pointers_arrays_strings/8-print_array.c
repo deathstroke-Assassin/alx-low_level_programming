@@ -5,9 +5,8 @@
  * @n: the character
  * Return: Always 0.
  */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
-
 while (a[n] != '\0')
 {
 _putchar(a[n]);
