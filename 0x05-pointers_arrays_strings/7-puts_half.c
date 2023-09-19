@@ -20,7 +20,7 @@ half++;
 }
 while (half < l)
 {
-_putchar (str[l]);
+_putchar (str[half]);
 half++;
 }
 n = (l -  1) / 2;
