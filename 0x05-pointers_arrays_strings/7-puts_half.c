@@ -23,5 +23,7 @@ while (half < l)
 _putchar (str[l]);
 half++;
 }
+n = (l -  1) / 2;
+_putchar(n);
 _putchar('\n');
 }
