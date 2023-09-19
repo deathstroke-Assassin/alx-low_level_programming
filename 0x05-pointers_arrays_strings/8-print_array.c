@@ -7,9 +7,15 @@
  */
 void print_array(int *a, int n)
 {
-while (a[n] != '\0')
+int l;
+while (l < n)
 {
-printf("%d, ", a[n]);
+printf("%d", a[n]);
+l++;
+if (l != (n - 1))
+{
+printf(", ");
+}
 }
 _putchar('\n');
 }
