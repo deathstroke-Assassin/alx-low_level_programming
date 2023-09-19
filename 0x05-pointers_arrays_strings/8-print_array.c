@@ -9,9 +9,7 @@ void print_array(int *a, int n)
 {
 while (a[n] != '\0')
 {
-_putchar(a[n]);
-_putchar(',');
-_putchar(' ');
+printf("%d, ", a[n]);
 }
 _putchar('\n');
 }
