@@ -8,15 +8,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-char *stct = dest;
+int lendest, lensrc;
 
-while (*stct){stct++;}
-while (*src)
+lensrc = 0;
+lendest = 0;
+
+while (*(dest + lendest) != '\0')
 {
-*stct = *src;
-stct++;
-src++;
+lendest++;
 }
-*stct = '\0';
+while (*(src + lensrc) != '\0'; lendest < 97)
+{
+*(dest + lendest) = *(src + lensrc);
+lendest++;
+lensrc++;
+}
+*(dest + lendest) = '\0';
 return dest;
 }
