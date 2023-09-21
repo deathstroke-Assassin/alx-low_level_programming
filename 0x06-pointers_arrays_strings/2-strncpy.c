@@ -15,6 +15,6 @@ while (src[cpy] != '\0' && cpy < n)
 *(dest + cpy) = *(src + cpy);
 cpy++;
 }
-*dest = '\0';
+*(dest + cpy) = '\0';
 return (dest);
 }
