@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * string_toupper - reverse an arrray.
+ * cap_string - reverse an arrray.
  * @str: lowercased string
  * Return: 0
  */
-char *string_toupper(char *str)
+char *cap_string(char *str);
 {
 	int f;
 	int ch = 0;
