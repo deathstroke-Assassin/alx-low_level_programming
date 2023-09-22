@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * cap_string - reverse an arrray.
- * @str: lowercased string
- * Return: 0
+ * cap_string - capitalizes most of the words in a string.
+ * @s: analized string.
+ *
+ * Return: String with all words capitalized.
  */
-char *cap_string(char *str);
+char *cap_string(char *str)
 {
 	int f;
 	int ch = 0;
