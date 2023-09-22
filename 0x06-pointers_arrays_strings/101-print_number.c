@@ -1,42 +1,19 @@
 #include "main.h"
-/**
- * print_number - print an int numbers.
- * @n: number tested
- * Return: Always 0.
- */
+
 void print_number(int n)
 {
-int c, f, sindig, digits, pow;
-unsigned int t, nch, number;
+  int divisor = 1;
 
-sindig = 0;
-if (n < 0)
-{
-_putchar('-');
-t = -n;
-}
-else
-{
-t = n;
-}
-number = t;
-while (n >= 10)
-{
-number = number / 10;
-sindig++;
-}
-digits = sindig + 1;
-pow = 1;
-c = 1;
-while (c < digits)
-{
-pow = pow * 10;
-c++;
-}
-while (f >= 1)
-{
-nch = (t / f) % 10;
-_putchar (nch + '0');
-f = f / 10;
-}
+  if (n < 0) {
+    _putchar('-');
+    n = -n;
+  }
+
+  while (n / divisor > 9)
+    divisor *= 10;
+
+  while (divisor != 0) {
+    _putchar((n / divisor) % 10 + '0');
+    divisor /= 10;
+  }
 }
