@@ -6,13 +6,13 @@
  */
 void print_number(int n)
 {
-int n, c ,f , sindig, digits, pow;
-unsigned int t , nch, number;
+int c, f, sindig, digits, pow;
+unsigned int t, nch, number;
 
 sindig = 0;
 if (n < 0)
 {
-_putchat('-');
+_putchar('-');
 t = -n;
 }
 else
@@ -35,8 +35,8 @@ c++;
 }
 while (f >= 1)
 {
-nch = (t /f) % 10;
-_putchar (n + '0');
+nch = (t / f) % 10;
+_putchar (nch + '0');
 f = f / 10;
 }
 }
