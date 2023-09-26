@@ -21,5 +21,9 @@ void print_diagsums(int *a, int size)
 		step2 = (size - 1) * j;
 		sumdiag2 = sumdiag2 + *(a + step2);
 	}
-	printf("%d, %d\n", sumdiag1, sumdiag2);
+putchar(sumdiag1);
+putchar(',');
+putchar(' ');
+putchar(sumdiag2);
+putchar('\n');
 }
