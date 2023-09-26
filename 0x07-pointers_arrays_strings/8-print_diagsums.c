@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - print additions of the two diagonals.
  * @a: source matrix
@@ -21,9 +22,5 @@ void print_diagsums(int *a, int size)
 		step2 = (size - 1) * j;
 		sumdiag2 = sumdiag2 + *(a + step2);
 	}
-putchar(sumdiag1);
-putchar(',');
-putchar(' ');
-putchar(sumdiag2);
-putchar('\n');
+	printf("%d, %d\n", sumdiag1, sumdiag2);
 }
