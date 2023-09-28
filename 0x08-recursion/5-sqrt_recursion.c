@@ -5,7 +5,7 @@
  * @y: char too! no no
  * Return: the l
  */
-int _sqrt(int x, int y)
+int _sqrt(int y, int x)
 {
 if (x * x == y)
 {
