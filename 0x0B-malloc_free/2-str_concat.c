@@ -24,7 +24,6 @@ if (!pt)
 {
 return (NULL);
 }
-
 i = -1;
 while (++i < size1)
 {
@@ -32,7 +31,7 @@ pt[i] = *s1++;
 }
 while (i < (size1 + size2))
 {
-pt[i] = *s2++;
+pt[i++] = *s2++;
 }
 return (pt);
 }
