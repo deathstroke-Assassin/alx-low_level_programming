@@ -17,9 +17,9 @@ char *pt;
 int i;
 int size1, size2;
 
-(s1) ? size1 = strlen(s1) : size1 = 0;
-(s2) ? size2 = strlen(s2) : size2 = 0;
-pt = (char*)malloc(sizeof(char) * (size1 + size2) + 1);
+(s1) ? size1 = strlen(s1) : (size1 = 0);
+(s2) ? size2 = strlen(s2) : (size2 = 0);
+pt = (char *)malloc(sizeof(char) * (size1 + size2) + 1);
 if (!pt)
 {
 return (NULL);
