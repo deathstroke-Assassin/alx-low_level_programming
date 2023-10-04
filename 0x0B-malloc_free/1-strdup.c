@@ -25,7 +25,9 @@ return (NULL);
 }
 i = -1;
 while (str[++i] && pt != NULL)
-		pt[i] = str[i];
-	pt[i] = pt[i];
-	return (pt);
+{
+pt[i] = str[i];
+}
+pt[i] = pt[i];
+return (pt);
 }
