@@ -20,7 +20,7 @@ if (size == 0 || !pt)
 return (NULL);
 }
 i = -1;
-while (i < size)
+while (++i < size)
 {
 pt[i] = c;
 }
