@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+/**
+ * array_range - checkt
+ * @min: integer to test
+ * @max: size
+ * Return: pt or 98
+ */
+
+int *array_range(int min, int max)
+{
+int *a;
+int i;
+int z;
+if (min > max)
+{
+return (NULL);
+}
+a = malloc(sizeof(int) * (max - min + 1));
+if (!a)
+{
+return (NULL);
+}
+i = min - 1;
+z = 0;
+while (++i <= max)
+{
+a[z++] = i;
+}
+return (a);
+}
