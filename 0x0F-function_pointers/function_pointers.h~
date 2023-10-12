@@ -1,0 +1,6 @@
+#ifndef FUNPOINT
+#define FUNPOINT
+
+int _putchar();
+
+#endif
