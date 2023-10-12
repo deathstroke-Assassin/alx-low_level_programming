@@ -1,5 +1,6 @@
 #ifndef FUNPOINT
 #define FUNPOINT
+#include <stdlib.h>
 
 int _putchar(char c);
 
