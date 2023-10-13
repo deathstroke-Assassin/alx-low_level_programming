@@ -13,7 +13,7 @@ va_list lst;
 unsigned int x, sum;
 if (n == 0)
 {
-        return (0);
+	return (0);
 }
 va_start(lst, n);
 for (x = 0; x < n; x++)
