@@ -1,37 +1,61 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "search_algos.h"
 
 /**
- * binary_search - divide and conquer
- * Return: the index of the target
- * @array: the array of integers
- * @size: the total no of int
- * @value: the target
+ * recursive_search - searches for a value in an array of
+ * integers using the Binary search algorithm
+ *
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
+int recursive_search(int *array, size_t size, int value)
+{
+	size_t half = size / 2;
+	size_t i;
 
+	if (array == NULL || size == 0)
+		return (-1);
+
+	printf("Searching in array");
+
+	for (i = 0; i < size; i++)
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+
+	printf("\n");
+
+	if (half && size % 2 == 0)
+		half--;
+
+	if (value == array[half])
+		return ((int)half);
+
+	if (value < array[half])
+		return (recursive_search(array, half, value));
+
+	half++;
+
+	return (recursive_search(array + half, size - half, value) + half);
+}
+
+/**
+ * binary_search - calls to binary_search to return
+ * the index of the number
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
+ */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t l, m, r;
+	int index;
 
-	if (array == NULL)
+	index = recursive_search(array, size, value);
+
+	if (index >= 0 && array[index] != value)
 		return (-1);
 
-	for (l = 0, r = size - 1; l <= r;)
-	{
-		printf("Searching in array ");
-		for (m = l; m < r; m++)
-			printf("%d, ", array[m]);
-		printf("%d\n", array[m]);
-		m = l + (r - l) / 2;
-		if (array[m] == value)
-			return (m);
-		if (array[m] > value)
-			r = m - 1;
-		else if (array[m] < value)
-			l = m + 1;
-	}
-	if (array[m] != value)
-		return (-1);
-	return (-1);
+	return (index);
 }
